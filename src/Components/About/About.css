@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(70, 69, 69);
 }
   .cube {
     width: 150px;
@@ -27,7 +26,6 @@
     height: 150px;
     border: 5px solid orange;
     box-shadow: 0px 0px 50px orange;
-    background-color: rgba(255, 165, 0,0.2);
     border-radius: 10px;
   }
   .side:hover{
@@ -38,33 +36,29 @@
   
   .front {
     transform: rotateY(0deg) translateZ(75px);
-    /* background-color: #ee4444; */
   }
   .right {
     transform: rotateY(90deg) translateZ(75px);
-    /* background-color: #ffcc00; */
   }
   .back {
     transform: rotateY(180deg) translateZ(75px);
-    /* background-color: #ff0055; */
   }
   .left {
     transform: rotateY(-90deg) translateZ(75px);
-    /* background-color: #8855ff; */
   }
   .top {
     transform: rotateX(90deg) translateZ(75px);
-    /* background-color: #0099ff; */
   }
   .bottom {
     transform: rotateX(-90deg) translateZ(75px);
-    /* background-color: #22cc88; */
+  }
+  .About-title{
+    color: orange;
   }
 
   .About-list{
-    width: 40%;
+    width: 60%;
     height: 90%;
-    background-color: rgb(70, 69, 69);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -72,4 +66,16 @@
   }
   .About-list>h2{
     color: orange;
+  }
+  @media screen and (max-width:550px){
+    .About{
+      flex-direction: column;
+    }
+    .cube-animation{
+      height: 30%;
+      width: 90%;
+    }
+    .About-list{
+      width: 90%;
+    }
   }

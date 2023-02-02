@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    /* background: linear-gradient(to right, #fffc00, #ffffff); */
     background-color: plum;
 }
 
@@ -31,4 +30,23 @@
     padding: 2%;
     background-color: orangered;
     border-radius: 0px 10px 10px 0px;
+}
+@media screen and (max-width:768px) {
+    .blob{
+        width: 30%;
+    }
+    .home-intro{
+        width: 70%;
+    }
+}
+@media screen and (max-width:600px) {
+    .Home{
+        flex-direction: column;
+    }
+    .blob{
+        width: 90%;
+    }
+    .home-intro>h2{
+        font-size: smaller;
+    }
 }

@@ -22,7 +22,7 @@ function Navbar() {
     },
       {
         src: "https://cdn.dribbble.com/users/790118/screenshots/3894553/mail-gif.gif",
-        title: "Fire me an E-mail",
+        title: "Contact",
       },
     {
       src: "https://ik.imagekit.io/njzqmguob/IMG20230104114558.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672814964495",
@@ -33,11 +33,9 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="nav-cards1">
-        {/* <div className="nav-cards2"> */}
           {cardData.map((item,index) => (
-            <Navcards data={item} index={index}/>
+            <Navcards key={item.title} data={item} index={index}/>
           ))}
-        {/* </div> */}
       </div>
     </div>
   );

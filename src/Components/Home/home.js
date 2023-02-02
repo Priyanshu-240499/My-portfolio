@@ -2,14 +2,23 @@ import React from "react";
 import "./home.css";
 import NavigateBtn from "../NavigateButton/NavigateBtn";
 import MyIntroList from "./MyIntroList";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 function Home() {
-
-    const homeIntroData=["Name:Priyanshu Choudhary","Fathers name:Priyanshu Choudhary","Mothers name:Priyanshu Choudhary","Hobbies:Priyanshu Choudhary"]
+  const homeIntroData = [
+    "Name:Priyanshu Choudhary",
+    "Fathers Name:Bhagwat S. Choudhary",
+    "Mothers Name:Pramila Choudhary",
+    "Hobbies:Badminton,Painting,Learning new Technology,Cooking",
+  ];
 
   return (
     <div className="Home">
-      <motion.div className="blob" initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{duration:0.8}}>
+      <motion.div
+        className="blob"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{delay:0.2, duration: 0.8 }}
+      >
         <svg
           viewBox="0 0 500 500"
           xmlns="http://www.w3.org/2000/svg"
@@ -42,8 +51,12 @@ function Home() {
       </motion.div>
 
       <div className="home-intro">
-        {homeIntroData.map((item,index)=><MyIntroList key={item} data={item} index={index}/>)}
-        <NavigateBtn/>
+        {homeIntroData.map((item, index) => (
+          <MyIntroList key={item} data={item} index={index} rotate={5}/>
+        ))}
+        <NavigateBtn pathto="/About" pathname="About" animDuration="1.6"/>
+        <NavigateBtn pathto="/nav" pathname="NavBar" animDuration="2.3"/>
+        
       </div>
     </div>
   );

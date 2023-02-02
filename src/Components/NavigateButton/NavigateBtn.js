@@ -1,16 +1,19 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import "./navigatebtn.css";
-function NavigateBtn() {
+import {useNavigate} from "react-router-dom"
+function NavigateBtn({pathto,pathname,animDuration}) {
+  const navigate=useNavigate();
   return (
-    <motion.button className="navigate-btn"
-        initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{duration:1}}
+    <motion.button onClick={()=>navigate
+    (`${pathto}`)} className="navigate-btn"
+        initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{delay:animDuration ,duration:0.7}}
   whileHover={{
     scale: 1.2,
     transition: { duration: 0.3 },
   }}
   whileTap={{ scale: 0.7 }}
->Navigate</motion.button>
+>{pathname}</motion.button>
   )
 }
 
