@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+.ProjectCard{
+    width: 18%;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2px;
+}
+.Project-title{
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+    font-size: 20px;
+}
+.Project-technology{
+    padding: 5px 0px;
+}
+.Project-Desrciption{
+    padding: 5px 0px;
+}
+@media screen and (max-width:860px) {
+    .ProjectCard{
+        width: 25%;
+    }
+}
+@media screen and (max-width:630px) {
+    .ProjectCard{
+        width: 30%;
+    }
+}
+@media screen and (max-width:525px) {
+    .ProjectCard{
+        width: 90%;
+    }
+}

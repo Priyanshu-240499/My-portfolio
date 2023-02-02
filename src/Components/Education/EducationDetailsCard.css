@@ -1,0 +1,20 @@
+td>h2{
+    color: white;
+}
+.Edu-details-row{
+    padding: 1% 0%;
+    background-color: rgba(0,0,0,0.5);
+}
+td{
+    text-align: center;
+}
+@media screen and (max-width:550px) {
+    td>h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:450px) {
+    td>h2{
+        font-size: 15px;
+    }
+}
