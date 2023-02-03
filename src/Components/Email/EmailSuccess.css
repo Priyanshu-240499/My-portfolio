@@ -1,0 +1,10 @@
+.EmailSuccess{
+    width: 100%;
+    height: 100vh;
+    background: url("https://c4.wallpaperflare.com/wallpaper/71/277/202/street-lights-night-blurred-wallpaper-preview.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

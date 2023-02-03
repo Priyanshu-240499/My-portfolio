@@ -15,6 +15,7 @@
 }
 @media screen and (max-width:525px) {
     .Projects{
-        height: 200vh;
+        height: 250vh;
+        padding-bottom: 1%;
     }
 }

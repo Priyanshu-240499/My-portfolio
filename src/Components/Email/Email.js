@@ -2,12 +2,12 @@ import React from 'react'
 import "./Email.css";
 import { useForm, ValidationError } from '@formspree/react';
 import {motion} from "framer-motion";
-import {useNavigate} from "react-router-dom"
+import EmailSuccess from './EmailSuccess';
 function Email() {
   const [state, handleSubmit] = useForm("mgebodbo");
-  const navigate=useNavigate();
+  
   if (state.succeeded) {
-      navigate("/")
+    return <EmailSuccess/>;     
   }
   return (
     <div className='Email'>

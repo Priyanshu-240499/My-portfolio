@@ -2,6 +2,7 @@ import React from "react";
 import "./Educations.css";
 import EducationDetailsCard from "./EducationDetailsCard";
 import { motion } from "framer-motion";
+import NavigateBtn from "../NavigateButton/NavigateBtn";
 function Educations() {
   const EduDetails = [
     {
@@ -31,6 +32,7 @@ function Educations() {
   ];
 
   return (
+
     <div className="Education">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
@@ -49,7 +51,7 @@ function Educations() {
           </h2>
           <strong>
             Based on my communication skills and consistent performance, I have
-            been offered the role of TA intern.Role:Hosting Doubt solving sessions for web (HTML,CSS,JS,React)
+            been offered the role of TA intern. Role: Hosting Doubt solving sessions for web (HTML,CSS,JS,React)
           </strong>
         </motion.div>
         <motion.table
@@ -64,6 +66,10 @@ function Educations() {
             ))}
           </tbody>
         </motion.table>
+        <div style={{display:"flex",justifyContent:"space-evenly",width:"60%"}}>
+          <NavigateBtn pathto="/Projects" pathname="Projects" animDuration="1.8"/>
+          <NavigateBtn pathto="/Contact" pathname="Contact" animDuration="2.5"/>
+        </div>
       </div>
     </div>
   );

@@ -7,8 +7,8 @@
   align-items: center;
 }
 .Splash-Education {
-  width: 40%;
-  height: 90%;
+  width: 50%;
+  height: 100%;
   border-top: 5px solid yellow ;
   border-left: 5px solid yellow ;
   background: url("https://media0.giphy.com/media/qld24z8JsiZMZDMO7p/giphy.gif");
@@ -35,13 +35,22 @@
   background-color: rgba(0,0,0,0.5);
   color: yellow;
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
   .Splash-Education{
     width: 90%;
   }
   .Education-details{
     left: -25%;
   }
+  .Interniship{
+    width: 120%;
+  }
+
+  @media screen and (max-width:550px) {
+    .Interniship{
+      width: 150%;
+    }
+}
   
 
   

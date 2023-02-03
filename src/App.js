@@ -8,6 +8,7 @@ import Educations from './Components/Education/Educations';
 import Projects from './Components/Projects/Projects';
 import Email from './Components/Email/Email';
 import {BrowserRouter,Route,Routes} from "react-router-dom";
+import EmailSuccess from './Components/Email/EmailSuccess';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Route path="/Projects" element={<Projects/>} />
       <Route path="/Contact" element={<Email/>} />
       <Route path="/Resume" element={<Resume/>} />
+      <Route path="/EmailSuccess" element={<EmailSuccess/>} />
       </Routes>
       </BrowserRouter>
     </>
