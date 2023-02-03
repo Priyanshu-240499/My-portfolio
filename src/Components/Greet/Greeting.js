@@ -23,7 +23,7 @@ function Greeting() {
           <Typewrite
             onInit={(text) => {
               text
-                .pauseFor(2500)
+                .pauseFor(1000)
                 .typeString("Hi there,")
                 .pauseFor(1000)
                 .deleteAll()
@@ -40,7 +40,7 @@ function Greeting() {
           className="greet-visit"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 19, duration: 0.4 }}
+          transition={{ delay: 3, duration: 0.4 }}
           whileHover={{
             scale: 1.2,
             transition: { duration: 0.3 },
