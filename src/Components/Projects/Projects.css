@@ -4,18 +4,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 1%;
+    padding: 1% 0%;
     row-gap: 15px;
     background-color: rgb(54, 52, 52);
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:860px) {
     .Projects{
-        height: 120vh;
+        height: 150vh;
     }
 }
-@media screen and (max-width:525px) {
+@media screen and (max-width:539px) {
     .Projects{
         height: 250vh;
-        padding-bottom: 1%;
     }
 }

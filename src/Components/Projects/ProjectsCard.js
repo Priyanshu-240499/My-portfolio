@@ -7,6 +7,7 @@ function ProjectsCard({data:{title,href,technology,description,bgcolor},index}) 
       <h5 className='Project-title' >
         {title}
       </h5>
+      <p >Click the card to visit***</p>
       <p className='Project-technology'><strong>Technology: </strong>{technology}</p>
       <p className='Project-Desrciption'><strong>Description: </strong>{description}</p>
       {index===0?<p style={{fontSize:"70%"}}>[NOTE Email: priyanshoochoudhary@gmail.com Passwrod: 123456789]</p>:""}

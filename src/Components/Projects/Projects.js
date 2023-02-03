@@ -89,12 +89,20 @@ function Projects() {
         },
   ];
   return (
+    <>
     <div className="Projects">
         {ProjectData.map((item, index) => (
           <ProjectsCard key={item.title} data={item} index={index} />
         ))}
-        <NavigateBtn pathto="/Contact" pathname="Contact" animDuration="2.5"/>
+        
     </div>
+    <div style={{padding:"1% 0%",display:"flex",justifyContent:"space-evenly",backgroundColor:"rgb(54, 52, 52)"}}>
+    <NavigateBtn pathto="/Contact" pathname="Contact" animDuration="2.5"/>
+    <NavigateBtn pathto="/nav" pathname="Navbar" animDuration="3.5"/>
+    </div>
+    </>
+    
+    
   );
 }
 
